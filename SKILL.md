@@ -53,3 +53,14 @@ Use active voice as default. A control should say exactly what happens when it's
 Treat failure and emptiness as moments for direction, not mood. Explain what went wrong and how to fix it, in the interface's voice rather than a person's. Errors don't apologize, and they are never vague about what happened. An empty screen is an invitation to act.
 
 Keep the register conversational and tuned: plain verbs, sentence case, no filler, with tone matched to the brand and the audience. Let each element do exactly one job. A label labels, an example demonstrates, and nothing quietly does double duty.
+
+## References
+
+The judgment above is the skill. These are the concrete details — pull one in only when you reach that part of the work, not all up front:
+
+- `references/design-vocabulary.md` — named directions to choose between during the brainstorm pass, plus the per-discipline lens for fixing slop one axis at a time.
+- `references/anti-slop.md` — the component-level "AI made this" tells, and restraint made measurable (color/type budgets, the remove test, the convergence check).
+- `references/tokens.md` — turning the design plan into a primitive → semantic → component token system, dark mode, and the selector-specificity bug to avoid.
+- `references/typography.md` — scale ratios, measure, OpenType settings, correct glyphs, and the JSX quote gotcha.
+- `references/motion.md` — easing curves, durations by weight, orchestration, and reduced-motion.
+- `references/responsive-a11y.md` — breakpoints, touch targets, WCAG AA contrast, focus, and a 60-second pre-ship audit.
