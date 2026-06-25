@@ -25,14 +25,15 @@ in. Do not load everything up front.
 
 | You are here to... | Read, in order |
 |---|---|
-| **Fix or write copy / prose only** (page copy, headlines, microcopy, an essay, a post) | `copywriting.md` → `copy-banlist.md` (when editing hard) → `copy-examples.md` |
+| **Fix or write copy / prose only** (page copy, headlines, microcopy, an essay, a post) | `copywriting.md` → `copy-banlist.md` (when editing hard) → `copy-examples.md`. For a deep humanize pass on long-form prose, invoke the **`/human-text`** skill |
 | **Improve or design the visual style only** | This file's design principles → `design-vocabulary.md` → `anti-slop.md` → `typography.md` + `tokens.md` + `motion.md` as the work touches each |
 | **Both - a full page or redesign of look and words** | The brainstorm process below, then the visual references, then `copywriting.md` for every visible string |
 | **Build a new page / landing / portfolio from scratch** | Process below → `design-vocabulary.md` → `aesthetics.md` (once a direction is chosen) → `tokens.md` → `typography.md` → `motion.md` → `responsive-a11y.md` → `copywriting.md` → `pre-flight.md` |
 | **Redesign an existing site** | `redesign.md` first (detect mode, audit), then the levers it points to |
 | **Commit to a named direction** (minimalist, brutalist, premium/soft) | `design-vocabulary.md` to choose → `aesthetics.md` for the concrete kit |
 | **The brief is a known system** (Material, Fluent, Carbon, GOV.UK, Polaris, Primer, shadcn) | `design-systems.md` - use the official package, stop here for look |
-| **Generate reference images** (web comps, mobile screens, brand boards) or build image-first | `image-references.md` |
+| **Generate reference images** (web comps, mobile screens, brand boards) or build image-first | `image-references.md` for the art direction. To actually produce assets (images, transparent icons, SVG logos, brand palettes, scenes, video), invoke the **`/studio`** skill |
+| **Need real images, screenshots, or page data from the live web** | invoke **`/surf`** (screenshot a page or competitor, scrape a listing, pull a reference image, drive a logged-in page) |
 | **Make sure a large build ships complete** (no placeholders, full files) | `output-discipline.md` |
 | **Final check before shipping** | `pre-flight.md` (visual) + the Quick checks in `copywriting.md` (copy), run over the rendered result in both themes |
 
@@ -162,3 +163,8 @@ only when the router or your current step points to it, not all up front.
 
 **Output**
 - `output-discipline.md` - full-output enforcement, the banned placeholder patterns, chunking, and why models truncate. Pull in for large or multi-file builds.
+
+**Related skills (invoke these, they are not files here)**
+- `/human-text` - deep humanize pass on prose: strips AI writing tells (em dashes, significance inflation, rule of three, chatbot artifacts) and leaves a human voice. Use for long-form copy beyond the `copywriting.md` quick pass.
+- `/studio` - generate and edit real media via OpenRouter: images, transparent icons, SVG logos, brand palettes, scenes from reference photos, voice, music, and programmatic video. Use to produce the assets the design needs.
+- `/surf` - access the live web: screenshot a page or competitor, scrape a listing, pull a reference image, drive a logged-in page. Use for real images, screenshots, and page data.
